@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的 3D AR 展示</title>
-    <!-- 引入 Google 官方的 WebAR 載入腳本 -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <style>
         body { margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; }
@@ -13,14 +12,15 @@
 </head>
 <body>
 
-    <!-- 這裡已經自動填入你的 3D 模型直連網址 -->
     <model-viewer 
         src="monkey.glb" 
         ar 
         ar-modes="webxr scene-viewer quick-look" 
         camera-controls 
         shadow-intensity="1" 
-        auto-rotate>
+        auto-rotate
+        autoplay
+        animation-name="SuzanneAction">
     </model-viewer>
 
 </body>
